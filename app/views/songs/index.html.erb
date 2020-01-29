@@ -4,6 +4,7 @@
 <% @songs.each do |song| %>
     <p>
         <%= link_to song.name, song %>
+        <% binding.pry %>
         <%= link_to song.artist.name, song.artist %>
         <%= link_to song.genre.name, song.genre %>        
     </p>
